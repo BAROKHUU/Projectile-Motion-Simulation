@@ -26,7 +26,7 @@ Users can add multiple projectiles, customize launch parameters, and visualize t
 ├── style.css       # Styling
 ├── script.js       # Physics + rendering + interaction logic
 └── README.md
-
+```
 ## 🎮 How to Use
 ### **1. Requirements**
 - Đã cài đặt **Git**  
@@ -36,12 +36,16 @@ Users can add multiple projectiles, customize launch parameters, and visualize t
 ### **2. Clone repository**
 If you're using Terminal, run this code:
 ```bash 
-git clone https://github.com/BAROKHUU/Projectile-Motion-Simulation```
+git clone https://github.com/BAROKHUU/Projectile-Motion-Simulation
+```
 <br>
 If you're using SSH, run this code:
 
 ```bash
-git clone git@github.com:BAROKHUU/Projectile-Motion-Simulation.git```
+git clone git@github.com:BAROKHUU/Projectile-Motion-Simulation.git
+```
 
 Then go inside the project directory:
-```bash cd Projectile-Motion-Simulation```
+```bash
+cd Projectile-Motion-Simulation
+```
