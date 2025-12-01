@@ -21,10 +21,10 @@ Users can add multiple projectiles, customize launch parameters, and visualize t
 ---
 
 ## 📂 Project Structure
-/
-├── index.html # Main UI
-├── style.css # Styling
-├── script.js # Physics + rendering + interaction logic
+```text
+├── index.html      # Main UI
+├── style.css       # Styling
+├── script.js       # Physics + rendering + interaction logic
 └── README.md
 
 ## 🎮 How to Use
