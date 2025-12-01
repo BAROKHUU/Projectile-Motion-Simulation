@@ -1,0 +1,50 @@
+/* CSS */
+body { font-family: 'Segoe UI', Consolas, sans-serif; display: flex; height: 100vh; margin: 0; background: #f0f2f5; overflow: hidden; }
+
+/* Control Column */
+#controls {
+    width: 340px; background: white; box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    display: flex; flex-direction: column; z-index: 10; border-right: 1px solid #ddd;
+}
+.control-header { padding: 15px 20px; border-bottom: 1px solid #eee; background: #f8f9fa; }
+.control-header h2 { margin: 0; font-size: 1.2rem; color: #333; }
+
+.control-body { padding: 20px; overflow-y: auto; flex-grow: 1; display: flex; flex-direction: column; gap: 15px; }
+.input-group { display: flex; flex-direction: column; }
+label { font-weight: 600; font-size: 0.85em; margin-bottom: 5px; color: #555; }
+input[type="number"] { padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: Consolas, monospace; }
+
+/* BUTTONS */
+.btn-row { display: flex; gap: 10px; margin-top: 5px; }
+button {
+    flex: 1; padding: 10px; border: none; border-radius: 4px;
+    cursor: pointer; font-weight: bold; color: white; transition: 0.2s; font-size: 0.9em;
+}
+.btn-add { background: #28a745; } .btn-add:hover { background: #218838; }
+.btn-run { background: #007bff; } .btn-run:hover { background: #0056b3; }
+.btn-reset { background: #dc3545; } .btn-reset:hover { background: #c82333; }
+
+/* PAUSING BUTTON */
+.btn-pause { background: #ffc107; color: #333; display: none; } 
+.btn-pause:hover { background: #e0a800; }
+.btn-pause.paused { background: #fd7e14; color: white; animation: pulse 1s infinite; }
+
+@keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.8; } 100% { opacity: 1; } }
+
+/* LIST & TOGGLE */
+#object-list-container { flex-grow: 1; border: 1px solid #eee; border-radius: 4px; overflow-y: auto; background: #fafafa; padding: 5px; max-height: 250px; }
+.object-item {
+    background: white; border-left: 5px solid #ccc; padding: 10px; margin-bottom: 5px;
+    font-size: 0.85em; position: relative; box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.remove-btn { position: absolute; right: 8px; top: 8px; color: #dc3545; cursor: pointer; font-weight: bold; font-size: 1.2em; }
+
+.toggle-box {
+    display: flex; align-items: center; gap: 10px; background: #e9ecef; 
+    padding: 10px; border-radius: 4px; font-size: 0.9em; cursor: pointer;
+}
+
+/* FOOTER & CANVAS */
+.control-footer { padding: 15px; background: #222; color: #fff; font-size: 0.85em; font-family: Consolas, monospace; }
+#simulation-area { flex-grow: 1; position: relative; cursor: default; background: #fff; }
+canvas { display: block; }
