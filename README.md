@@ -35,9 +35,13 @@ Users can add multiple projectiles, customize launch parameters, and visualize t
   git --version
 ### **2. Clone repository**
 If you're using Terminal, run this code:
-```git clone https://github.com/BAROKHUU/Projectile-Motion-Simulation```
+```bash 
+git clone https://github.com/BAROKHUU/Projectile-Motion-Simulation
+<br>
 If you're using SSH, run this code:
-```git clone git@github.com:BAROKHUU/Projectile-Motion-Simulation.git ```
+
+```bash
+git clone git@github.com:BAROKHUU/Projectile-Motion-Simulation.git
 
 Then go inside the project directory:
-``` cd Projectile-Motion-Simulation ```
+```bash cd Projectile-Motion-Simulation
