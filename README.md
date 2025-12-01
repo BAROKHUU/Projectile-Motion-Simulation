@@ -29,8 +29,8 @@ Users can add multiple projectiles, customize launch parameters, and visualize t
 ```
 ## 🎮 How to Use
 ### **1. Requirements**
-- Đã cài đặt **Git**  
-  Kiểm tra bằng:
+- **Git Installed**  
+  Run this code in terminal to check:
   ```bash
   git --version
 ### **2. Clone repository**
